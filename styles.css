@@ -44,7 +44,12 @@ body {
     .flexbox {
         margin-left: 0;
         transition: 500ms;
+        width: 96%;
     }
+}
+
+@media (any-pointer: coarse) {
+
 }
 
 #title {
