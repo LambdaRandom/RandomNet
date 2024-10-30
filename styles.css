@@ -1,0 +1,315 @@
+:root {
+    --darkest-color: #000000; 
+    
+    --bg-color: #0a0400; 
+    --lightbg-color: #91530c; 
+    --txt-color: #ff8800; 
+    --color-shift: -20deg;
+
+    /* --bg-color: #00040a;  */
+    /* --lightbg-color: #0c5391;  */
+    /* --txt-color: #0088ff;  */
+    /* --color-shift: 165deg; */
+
+    /* --color-shift Used to color correct images */
+}
+
+@font-face {
+    font-family: ELVOLCAN;
+    src: url(EL_VOLCAN_black_mecana.ttf);
+}
+
+body {
+    font-family: ELVOLCAN;
+    font-weight: lighter;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    height: 100%;
+    width: 96%;
+    margin: 0, auto;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    margin-left: 20%;
+    min-width: 750px;
+
+    transition: 500ms;
+}
+
+@media only screen and (max-width:1020px) {
+    .flexbox {
+        margin-left: 0;
+        transition: 500ms;
+    }
+}
+
+#title {
+    font-size: 2.5em;
+    font-weight: bold;
+    height: 47px;
+    width: 100%;
+    background-color: var(--lightbg-color);
+    border-style: solid;
+    border-width: 2px;
+    font-style: italic;
+
+    box-shadow: 0 0 1px var(--txt-color), 0 0 5px var(--txt-color);
+
+}
+
+#title a:hover{
+    transition: 150ms;
+    transition-timing-function: steps(2);
+}
+
+.title a {
+    transition: 100ms;
+    transition-timing-function: steps(2);
+}
+
+.imagebar {
+    height: 47px;
+    float: right;
+    display: flex;
+    background-color: var(--lightbg-color);
+}
+
+.centerflexbox {
+    display: flex;
+    width: 100%;
+}
+
+#centergrouping {
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 0.8em;
+    border-style: solid;
+    border-color: var(--lightbg-color);
+    background-color: var(--bg-color);
+    border-width: 1px;
+    width: 75%;
+
+    box-shadow: 0 0 1px var(--txt-color), 0 0 5px var(--txt-color);
+}
+
+#rightbar {
+    margin-top: 20px;
+    font-size: 0.75em;
+    margin-left: 5%;
+    width: 20%;
+    height: fit-content;
+
+    min-width: 160px;
+}
+
+#highlightedrightbar {
+    background-color: var(--lightbg-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: var(--txt-color);
+    box-shadow: 0 0 1px var(--txt-color), 0 0 5px var(--txt-color);
+    padding: 5px;
+
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.links::after {
+    content: "<";
+    padding-left: 10px;
+    transition: 100ms;
+    transition-timing-function: steps(2);
+}
+
+.links:hover::after {
+    content: "<";
+    padding-left: 0px;
+    transition: 100ms;
+    transition-timing-function: steps(2);
+}
+
+.projectgroup {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nomargin {
+    margin: 0px;
+}
+
+a {
+    color: var(--txt-color);
+}
+
+a:hover {
+    color: white;
+    text-shadow: 0 0 1px white, 0 0 2px white, 0 0 20px white;
+}
+
+hr {
+    color: var(--lightbg-color);
+}
+
+.textglow {
+    text-shadow: 0 0 1px var(--txt-color), 0 0 2px var(--txt-color), 0 0 20px var(--lightbg-color);
+}
+
+.musicflexbox {
+    width: 99%;
+    font-size: 0.8em;
+    padding:5px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.infotags {
+    padding: 0;
+    margin: 0;
+    width: 30%;
+}
+
+.infotags i:hover {
+    color: white;
+    text-shadow: 0 0 1px white, 0 0 2px white, 0 0 20px white;
+}
+
+div.imagescroll {
+    background-color: var(--lightbg-color);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0px;
+    margin-right: 2px;
+    margin-left: 5px;
+}
+
+div.imagescroll img {
+    filter: unset;
+    image-rendering: auto;
+    padding: 0px;
+}
+
+.catpictures {
+    background-color: var(--lightbg-color);
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.catpictures img {
+    max-height: 170px;
+    margin: 2px;
+    padding: 0;
+    box-shadow: none;
+    z-index: 0;
+    overflow: auto;
+
+}
+
+.catpictures img:hover {
+    position: relative;
+    transition: 300ms;
+    transform: scale(2);
+    transition-timing-function: steps(3);
+    z-index: 1;
+    box-shadow: 0 0 1px var(--txt-color), 0 0 2px var(--txt-color), 0 0 20px var(--lightbg-color);
+    filter: unset;
+}
+
+.compositionborder {
+    margin-top: 20px;
+    background-color: var(--bg-color);
+    border-width: 1px;
+    border-color: var(--lightbg-color);
+    border-style: solid;
+
+    box-shadow: 0 0 1px var(--txt-color), 0 0 5px var(--txt-color);
+}
+
+img {
+    image-rendering: pixelated, optimizeSpeed;
+    filter: grayscale(100%) sepia(1) saturate(5) hue-rotate(var(--color-shift));
+    box-shadow: 0 0 1px var(--txt-color), 0 0 5px var(--lightbg-color);
+}
+
+.crt::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    z-index: 2;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+.music_box-container {
+    margin-top: 20px;
+    margin-left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: fit-content;
+    max-width: 340px;
+
+    box-shadow: 0 0 1px var(--lightbg-color), 0 0 5px var(--lightbg-color);
+    background-color: var(--lightbg-color);
+    padding: 5px;
+}
+
+.music_profile {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.music_profile p {
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    width:100px;
+    
+    font-size: 0.6em;
+    word-break: break-all;
+    /* white-space: normal; */
+}
+
+.music_box {
+    height: 150px;
+    width: 100px;
+    margin: 0px;
+    background-color: var(--bg-color);
+    color: var(--bg-color);
+}
+
+.music_box img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    box-shadow: none;
+}
+
+.music_box_audio {
+    max-width: 100px;
+    margin: 0;
+    padding: 0;
+    size: 50%;
+
+    float:bottom;
+}

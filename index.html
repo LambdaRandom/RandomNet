@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="crt">
+<!-- Bhanschrift Supremacy-->
+<head>
+    <meta charset="UTF-8">
+    <title>Randomnet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body onload="updateDateTime()">
+    <div class="flexbox">
+        <!--Title-->
+        <div id="title">
+            
+            <a href="index.html" id="textglow" onpointerenter="playAudio('sounds/home_sound_effect.mp3', 1)">Randomnet</a>
+
+
+            <div class="imagebar">
+                <img src="images/Flag_of_Maryland.svg.png" height="47px">
+                <img src="images/misc-aperture1.png" height="47px">
+                <img src="images/maxwell-cat.gif" height="47px">
+                <img src="images/cockroach.gif" height="47px">
+                <img src="images/abglobe.gif" height="47px">
+            </div>
+            
+        </div>
+
+        <div class="textglow">
+        <div class="centerflexbox">
+
+            <div id="centergrouping">
+                <h2 class="nomargin">Hello!</h2>
+                <p>My name is <b>Liam</b>. Online I go by Random, and in real life some people call me Lee. Anyone of those works, but don't call me "Random" in real life of course :). I like to write music, mostly solo pieces for the piano, and I like to code little experiments. None of it has much practicality, but it is a hobby I sometimes partake in. I like to play the piano, workout, and play games (less now than when I was younger, but games still hold a special place in my heart).<br><br>This website was made to catalog some of the things i've made, and as a place to host my projects centrally. Everything I post as a "creative work" was made by me for the hope that others could enjoy them. I might be working on any number of projects at a time, from redstone computers, to musical suites, to some in-real-life project. Should you wish to get in contact with me, you can find me on discord as <b>"randomlambda"</b><hr>Some GIFs from the <a href="https://www.anybrowser.org/campaign/">Any Browser Campaign</a>.<br>Inspiration from <a href="https://wrzeczak.net/index.html">wrzeczak.net</a><br>CRT Screen CSS from <a href="https://aleclownes.com/2017/02/01/crt-display.html">Alec Lownes</a><br>Assistance from Zachary</p>
+            </div>
+            <!-- Navigation Panel -->
+            <div id="rightbar">
+                <div id="highlightedrightbar">
+                    <a href="music.html" class="projectgroup">
+                        <span class="links" onpointerenter="playAudio('sounds/home_sound_effect.mp3')">Compositions</span>
+                    </a>
+                    <br>
+                    <a href="redstone_computers.html" class="projectgroup" >
+                        <span class="links" onpointerenter="playAudio('sounds/home_sound_effect.mp3')">Redstone CPUs</span>
+                    </a>
+                    <br>
+                    <a href="cats.html" class="projectgroup">
+                        <span class="links" onpointerenter="playAudio('sounds/home_sound_effect.mp3')">Cat Pictures</span>
+                    </a>
+                </div>
+                <img src="images/gasplasma.jpg" width="100%">
+
+                <hr>
+
+                <h3 class="nomargin">It is Currently</h3>
+                <span id="datetime"></span>
+
+            </div>
+            <!-- Navigation Panel -->
+
+        </div>
+        
+            <div class="music_box-container">
+                <div class="music_profile">
+                    <div class="music_box">
+                        <img src="images/Debussy.jpg">
+                    </div>
+                    <p>Clair de Lune</p>
+                    <p>Claude Debussy</p>
+                    <audio controls class="music_box_audio">
+                        <source src="music/Clair De Lune - Debussy 8-Bit Classical.mp3" type="audio/mpeg">
+                    </audio>
+
+                </div>
+
+                <div class="music_profile">
+                    <div class="music_box">
+                        <img src="images/Strauss.jpg">
+                    </div>
+                    <p>Danube Waltz</p>
+                    <p>Johann Strauss</p>
+                    <audio controls class="music_box_audio">
+                        <source src="music/The Blue Danube8 Bit CoverStrauss - BiTiDuck.mp3" type="audio/mpeg">
+                    </audio>
+
+                </div>
+
+                <div class="music_profile">
+                    <div class="music_box">
+                        <img src="images/Edward_Elgar.webp">
+                    </div>
+                    <p>Pomp and Circumstance</p>
+                    <p>Edward Elgar</p>
+                    <audio controls class="music_box_audio">
+                        <source src="music/Raxlen Slice - Pomp and Circumstance (8 Bit Chiptune Graduation).mp3" type="audio/mpeg">
+                    </audio>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    </body>
+
+</html>
