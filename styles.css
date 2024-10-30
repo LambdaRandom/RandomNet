@@ -2,9 +2,9 @@
     --darkest-color: #000000; 
     
     --bg-color: #0a0400; 
-    --lightbg-color: #91530c; 
+    --lightbg-color: #5e3608; 
     --txt-color: #ff8800; 
-    --color-shift: -20deg;
+    --color-shift: -15deg;
 
     /* --bg-color: #00040a;  */
     /* --lightbg-color: #0c5391;  */
@@ -317,4 +317,19 @@ img {
     size: 50%;
 
     float:bottom;
+}
+
+.splash-text-container {
+    background-color: var(--lightbg-color);
+    margin-top: 20px;
+    width: 100%;
+    height: fit-content;
+    max-height: 30px;
+    box-shadow: 0 0 1px var(--lightbg-color), 0 0 5px var(--lightbg-color);
+}
+
+.splash-text {
+    width: 100%;
+    margin-top:6px;
+    padding:0;
 }
