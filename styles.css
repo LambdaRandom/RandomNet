@@ -263,7 +263,7 @@ img {
     justify-content: center;
 
     width: fit-content;
-    max-width: 340px;
+    /* max-width: 340px; */
 
     box-shadow: 0 0 1px var(--lightbg-color), 0 0 5px var(--lightbg-color);
     background-color: var(--lightbg-color);
@@ -274,13 +274,14 @@ img {
     display: flex;
     flex-direction: column;
     margin: 5px;
+    width: fit-content;
 }
 
 .music_profile p {
     padding: 0;
     margin: 0;
     margin-top: 3px;
-    width:100px;
+    width: fit-content;
     
     font-size: 0.6em;
     word-break: break-all;
