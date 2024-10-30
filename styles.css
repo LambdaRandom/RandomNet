@@ -191,6 +191,10 @@ hr {
     text-shadow: 0 0 1px white, 0 0 2px white, 0 0 20px white;
 }
 
+.infotags audio {
+    max-width: 200px;
+}
+
 div.imagescroll {
     background-color: var(--lightbg-color);
     overflow: auto;
