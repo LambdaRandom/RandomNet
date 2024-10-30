@@ -35,6 +35,7 @@ body {
     width: 60%;
     padding: 20px;
     margin-left: 20%;
+    
     min-width: 750px;
 
     transition: 500ms;
@@ -45,6 +46,13 @@ body {
         margin-left: 0;
         transition: 500ms;
         width: 96%;
+        min-width: 556px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .imagebar {
+        visibility: hidden
     }
 }
 
