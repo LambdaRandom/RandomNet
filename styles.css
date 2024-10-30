@@ -193,6 +193,8 @@ hr {
 
 .infotags audio {
     max-width: 200px;
+    color: var(--txt-color);
+    filter: grayscale(100%) sepia(1) saturate(5) hue-rotate(var(--color-shift));
 }
 
 div.imagescroll {
@@ -315,6 +317,7 @@ img {
     padding: 0;
     size: 50%;
 
+    filter: grayscale(100%) sepia(1) saturate(5) hue-rotate(var(--color-shift));
     float:bottom;
 }
 
