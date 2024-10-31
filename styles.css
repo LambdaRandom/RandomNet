@@ -54,6 +54,14 @@ body {
     .imagebar {
         visibility: hidden
     }
+    .centerflexbox {
+        width: 100%;
+        flex-direction: column;
+    }
+    .centergrouping {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 @media (any-pointer: coarse) {
@@ -96,7 +104,7 @@ body {
     width: 100%;
 }
 
-#centergrouping {
+.centergrouping {
     margin-top: 20px;
     padding: 5px;
     font-size: 0.8em;
