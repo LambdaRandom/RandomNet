@@ -41,19 +41,6 @@ body {
     transition: 500ms;
 }
 
-/* @media only screen and (max-width:1020px) {
-    .flexbox {
-        margin-left: 0;
-        transition: 500ms;
-        width: 96%;
-        min-width: 500px;
-    }
-} */
-
-@media (any-pointer: coarse) {
-
-}
-
 #title {
     font-size: 2.5em;
     font-weight: bold;
@@ -65,7 +52,6 @@ body {
     font-style: italic;
 
     box-shadow: 0 0 1px var(--txt-color), 0 0 5px var(--txt-color);
-
 }
 
 #title a:hover{
@@ -171,7 +157,6 @@ hr {
     padding:5px;
     display: flex;
     flex-direction: row;
-
 }
 
 .infotags {
@@ -215,9 +200,7 @@ div.imagescroll img {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 
 .catpictures img {
     max-height: 170px;
@@ -343,13 +326,9 @@ img {
     z-index: 100;
     width: 100%;
     height: 100%;
-    /* background-size: 0.3vw, 0.1vh; */
-
-
     opacity: 0.15;
 
     pointer-events: none;
-    
 }
 
 .earth_image {
@@ -367,6 +346,10 @@ img {
     align-items: center;
 }
 
+
+
+
+
 @media only screen and (max-width:1005px) {
     .flexbox {
         margin-left: 0;
@@ -374,23 +357,23 @@ img {
         width: 96%;
     }
     .imagebar {
-        visibility: hidden
+        visibility: hidden;
     }
     .centerflexbox {
         width: 100%;
         flex-direction: column;
     }
     .centergrouping {
-        width: 100%;
+        width: 99%;
         justify-content: center;
     }
     #rightbar {
         margin-top: 20px;
-        font-size: 0.75em;
+        font-size: 0.8em;
         margin-left: unset;
+
         width: 100%;
         height: fit-content;
-    
         min-width: 160px;
     }
     .music_box-container {
