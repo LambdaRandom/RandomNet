@@ -32,11 +32,11 @@ body {
 .flexbox {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 80%;
     padding: 20px;
-    margin-left: 20%;
+    margin-left: 10%;
     
-    min-width: 750px;
+    /* min-width: 750px; */
 
     transition: 500ms;
 }
