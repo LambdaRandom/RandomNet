@@ -360,8 +360,10 @@ img {
     z-index: 100;
     width: 100%;
     height: 100%;
+    background-size: 0.3vw, 0.1vh;
 
-    opacity: 0.05;
+
+    opacity: 0.15;
 
     pointer-events: none;
     
