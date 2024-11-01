@@ -41,32 +41,14 @@ body {
     transition: 500ms;
 }
 
-@media only screen and (max-width:1020px) {
+/* @media only screen and (max-width:1020px) {
     .flexbox {
         margin-left: 0;
         transition: 500ms;
         width: 96%;
-        min-width: 556px;
+        min-width: 500px;
     }
-}
-
-@media only screen and (max-width:800px) {
-    .imagebar {
-        visibility: hidden
-    }
-    .centerflexbox {
-        width: 100%;
-        flex-direction: column;
-    }
-    .centergrouping {
-        width: 100%;
-        justify-content: center;
-    }
-    .maryland_display {
-        max-width: 100%;
-        margin-left: 10px;
-    }
-}
+} */
 
 @media (any-pointer: coarse) {
 
@@ -360,11 +342,54 @@ img {
     z-index: 100;
     width: 100%;
     height: 100%;
-    background-size: 0.3vw, 0.1vh;
+    /* background-size: 0.3vw, 0.1vh; */
 
 
     opacity: 0.15;
 
     pointer-events: none;
     
+}
+
+.earth_image {
+    width: 250px; 
+    height: 250px; 
+    margin-top: 20px;
+    box-shadow: unset;
+}
+
+@media only screen and (max-width:1005px) {
+    .flexbox {
+        margin-left: 0;
+        min-width: unset;
+        width: 96%;
+    }
+    .imagebar {
+        visibility: hidden
+    }
+    .centerflexbox {
+        width: 100%;
+        flex-direction: column;
+    }
+    .centergrouping {
+        width: 100%;
+        justify-content: center;
+    }
+    #rightbar {
+        margin-top: 20px;
+        font-size: 0.75em;
+        margin-left: unset;
+        width: 100%;
+        height: fit-content;
+    
+        min-width: 160px;
+    }
+    .music_box-container {
+        width: 100%;
+    }
+    .earth_image {
+        align-self: center;
+        width: 70%;
+        height: auto;
+    }
 }
