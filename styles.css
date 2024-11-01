@@ -368,14 +368,3 @@ img {
     pointer-events: none;
     
 }
-
-.maryland_display {
-    max-height: 250px;
-    max-width: 374px;
-    width: 100%;
-    height: 100%;
-    
-    margin-top: 20px;
-    margin-left: 20px;
-    box-shadow: none;
-}
