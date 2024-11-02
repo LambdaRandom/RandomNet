@@ -111,6 +111,10 @@ body {
     margin-bottom: 20px;
 }
 
+.links {
+    font-weight: 100;
+}
+
 .links::after {
     content: "<";
     padding-left: 10px;
