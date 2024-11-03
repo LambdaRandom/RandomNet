@@ -350,8 +350,33 @@ img {
     align-items: center;
 }
 
+.blog {
+    padding: 0px;
+    font-size: 0.9em;
+    border-style: solid;
+    border-color: var(--lightbg-color);
+    background-color: var(--bg-color);
+    border-width: 1px;
+    box-shadow: 0 0 1px var(--txt-color), 0 0 5px var(--txt-color);
+}
 
+.blog_title_date {
+    background-color: var(--lightbg-color);
+    width: 100%;
+    margin: 0;
+}
 
+.blog_title_date h2 {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    text-align: center;
+}
+
+.blog p {
+    padding: 3px;
+    margin: 1px;
+}
 
 
 @media only screen and (max-width:1005px) {
